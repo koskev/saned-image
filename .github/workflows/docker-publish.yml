@@ -45,7 +45,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            saned
+            ghcr.io/koskev/saned
       
       - name: Build and push
         uses: docker/build-push-action@v2
