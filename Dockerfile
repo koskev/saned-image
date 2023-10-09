@@ -10,6 +10,6 @@ RUN apt-get update \
 RUN echo "0.0.0.0/0" > /etc/sane.d/saned.conf
 
 # TODO: figure out permissions
-CMD saned -l -b 0.0.0.0
+CMD saned -l -b 0.0.0.0 -e
 
 
