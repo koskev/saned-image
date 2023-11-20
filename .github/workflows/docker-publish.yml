@@ -45,7 +45,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            ghcr.io/koskev/saned
+            ghcr.io/koskev/saned-image
 
       - name: Get current date
         id: date
