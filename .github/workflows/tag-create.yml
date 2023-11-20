@@ -1,6 +1,16 @@
 on:
   schedule:
     - cron: '1 1 * * 1' # Every week
+  push:
+    branches:
+      - 'main'
+      - 'dev'
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - 'main'
+      - 'dev'
 
 name: Create Release
 
